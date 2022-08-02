@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script>
+
+        var nome = prompt('Por favor, digite seu nome: ')
+        var idade = prompt('E agora, digite sua idade: ')
+        var faixa = null
+
+        if(idade >= 0 && idade < 15){
+            faixa = 'Crianca'
+        } else if(idade >= 15 && idade < 30){
+            faixa = 'Jovem'
+        } else if(idade >= 30 && idade < 60){
+            faixa = 'Adulto'
+        } else {
+            faixa = 'Idoso(a)'
+        }
+
+        document.write('Ola ' + nome + ', vejo aqui que voce e um(a) ' + faixa + '.')
+
+    </script>
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
