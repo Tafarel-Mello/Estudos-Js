@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+
+        // Funcoes - Introducao
+        // calcular a area de um terreno ou um retangulo
+
+        function calcularArea (largura, comprimento){
+            var area = largura * comprimento
+            return area
+        }
+
+        var largura = prompt('Digite a largura: ')
+        var comprimento = prompt('Digite o comprimento: ')
+
+        /*
+        como os valores de entrada de largura em comprimento sao
+        submetidos a function, o interpretador entende que sao
+        valores do tipo number, sem a necessidade do parse
+        */
+
+        var area = calcularArea(largura, comprimento)
+
+        document.write('O terreno/retangulo possui ' + area + ' metros quadrados.')
+
+
+
+    </script>
+
+
+
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
