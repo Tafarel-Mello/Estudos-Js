@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+
+        // 3 escopos: global, funcao e bloco
+        // global: escopo de todo o script
+        // funcao: conteudo inserido dentro de um bloco de funcao - soma, area, etc... 
+        // bloco: instrucoes contidas dentro de comandos, como o "if" e o "switch"
+
+        /*
+        variaveis de funcao e de bloco, visualizam variaveis global
+
+        variaveis dentro do escopo de bloco, sofrem "elevacao/hoisting", sendo visiveis so escopo global
+
+        variaveis de funcao sao acessiveis so na funcao
+        */
+
+        var serie = 'friends'
+
+        // escopo bloco
+        if(true){
+            var serie_2 = 'GOT'
+            document.write(serie)
+        }
+
+        document.write(serie_2)
+
+        document.write('<br />')
+
+        function x(){
+            var serie_3 = 'The walking Dead' // o escopo global nao tem acesso a esta variavel - sem retorno na impressao
+            document.write(serie)
+            document.write(serie_2)
+        }
+
+        x()
+
+    </script>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
