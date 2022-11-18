@@ -25,11 +25,16 @@
     <script>
         var p1 = document.getElementsByTagName('p')[0]
 
+        /*
         window.document.write(p1.innerHTML)
         p1.style.color = 'black'
         var d = document.getElementById('msg')
         d.style.background = 'green'
         d.innerText = 'Estou aguardando...'
+        */
+
+        var d = document.querySelector('div#msg') // selecionar direto a div com o ID descrito
+        d.style.color = 'blue'
 
     </script>
 
