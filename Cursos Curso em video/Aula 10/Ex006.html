@@ -26,24 +26,27 @@
 <body>
     <h1>Eventos DOM</h1>
 
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()">
+    <div id="area">
         Interaja...
     </div>
 
 
 
     <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', saiu)
+
         function clicar(){
-            var a = document.getElementById('area')
             a.innerText = 'Clicou'
+            a.style.background = 'blue'
         }
         function entrar(){
-            var a = document.getElementById('area')
             a.innerText = 'Entrou'
             a.style.background = 'red'
         }
         function saiu(){
-            var a = document.getElementById('area')
             a.innerText = 'Saiu'
             a.style.background = 'green'
         }
