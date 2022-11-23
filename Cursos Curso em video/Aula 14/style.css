@@ -36,3 +36,11 @@ footer {
     text-align: center;
     font-style: italic;
 }
+#botao{
+    text-align: center;
+    width: 100%;
+    height: 2rem;
+    line-height: 25px;
+    border-radius: 10px;
+    margin: auto;
+}
