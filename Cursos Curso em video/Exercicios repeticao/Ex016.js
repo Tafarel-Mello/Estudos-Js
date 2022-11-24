@@ -6,7 +6,7 @@ function calcular() {
 
     if(n1.value.length == 0 || n2.value.length == 0 || n3.value.length == 0){
         window.alert('[OUPS] Por favor, digite os dados necessarios!')
-        res.innerHTML = 'Impossivel contar! Insira os dados novamente.'
+        res.innerHTML = '<br> Impossivel contar! Insira os dados novamente.'
     } else{
         res.innerHTML = '<br> Contando: <br>'
         let inicio = Number(n1.value)
