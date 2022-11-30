@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div id="test" ondblclick="acao()" style="background: #ccc; height: 300px; width: 300px; margin: auto;" onmouseover="entrou()" onmouseleave="saiu()">
+
+    </div>
+
+    <script>
+        function acao(){
+            alert('Evento disparado')
+        }
+        function entrou(){
+            let teste = document.getElementById('test')
+            teste.style.background = 'red'
+        }
+        function saiu(){
+            let teste = document.getElementById('test')
+            teste.style.background = '#ccc'
+        }
+    </script>
+</body>
+</html>
