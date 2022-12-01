@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div>
+        <input id="entrada" type="text" placeholder="Digite um caracter aqui: " onkeyup="distribuiCaracter()">
+    </div>
+    <hr>
+    <span>Letras: </span>
+    <input id="letra" type="text" disabled="disabled">
+
+    <span>Numeros: </span>
+    <input id="numero" type="text" disabled="disabled">
+
+    <script>
+        function distribuiCaracter(){
+            // selecionar o valor digitado
+           let caracter = document.getElementById('entrada').value
+           // limpar o campo de digitacao
+           document.getElementById('entrada').value = ''
+           // limpar espacos em branco na string
+           caracter.trim()
+
+
+           if(caracter >= 0 || caracter <= 9){
+            document.getElementById('numero').value += caracter
+           } else{
+            document.getElementById('letra').value += caracter
+           }
+        }
+    </script>
+</body>
+</html>
